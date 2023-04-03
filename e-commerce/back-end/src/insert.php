@@ -1,6 +1,6 @@
 <?php
 session_start();
-include('');
+include('conexao.php');
 
 $userArgs = filter_input_array(INPUT_POST, FILTER_DEFAULT);
 
@@ -13,9 +13,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $stmt->execute();
         $count = $stmt->fetchColumn();
 
-        if($count > 0){
+        if ($count > 0) {
             $_SESSION['error'] = "Email já existe no banco de dados";
-            header('Location: ');
+            // header('Location: ../../front-end/pages/signin/new.php');
         }
     } catch (PDOException $e) {
         echo "Error no banco dados " . $e->getMessage();

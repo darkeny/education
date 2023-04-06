@@ -36,7 +36,7 @@ session_start();
                         <label for="name">Insira o seu nome</label>
                     </div>
                     <div class="form-floating my-2">
-                        <input type="text" id="email" name="email" class="form-control hidden-focus" required placeholder="Insira seu email">
+                        <input type="email" id="email" name="email" class="form-control hidden-focus" required placeholder="Insira seu email">
                         <label for="name">Insira o seu email</label>
                     </div>
                     <div class="form-floating">

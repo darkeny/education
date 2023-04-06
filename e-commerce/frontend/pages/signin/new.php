@@ -30,7 +30,7 @@ session_start();
                 echo $_SESSION['error'];
                 unset($_SESSION['error']);
                 ?>
-                <form action="./../../../backend/src/insert.php" method="post" class="needs-validation" novalidate>
+                <form action="../../../backend/src/insert.php" method="post" class="needs-validation" novalidate>
                     <div class="form-floating">
                         <input type="text" id="name" name="nome" class="form-control hidden-focus" required placeholder="Insira seu nome">
                         <label for="name">Insira o seu nome</label>

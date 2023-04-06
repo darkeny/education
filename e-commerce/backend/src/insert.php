@@ -1,6 +1,6 @@
 <?php
 session_start();
-include("conexao.php");
+include("../../frontend/pages/signin/index.php");
 
 $userArgs = filter_input_array(INPUT_POST, FILTER_DEFAULT);
 
@@ -31,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             try {
                 $stmt->execute();
                 echo "Registro criado com sucesso!";
-                header('Location: ../frontend/pages/signin/');
+                header('Location:  ../../frontend/pages/signin/index.php');
             } catch (PDOException $e) {
                 echo "Erro ao criar o registro: " . $e->getMessage();
             }

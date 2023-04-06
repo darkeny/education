@@ -26,8 +26,11 @@ session_start();
         <div class="container-login-small content-center w-100 ">
             <div class="shadow p-5 brd-15">
                 <h1 class="fw-bold text-center">Sign-up</h1>
-                <?php echo $_SESSION['error'] ?>
-                <form action="../../../back-end/src/insert.php" method="post" class="needs-validation" novalidate>
+                <?php
+                echo $_SESSION['error'];
+                unset($_SESSION['error']);
+                ?>
+                <form action="./../../../backend/src/insert.php" method="post" class="needs-validation" novalidate>
                     <div class="form-floating">
                         <input type="text" id="name" name="nome" class="form-control hidden-focus" required placeholder="Insira seu nome">
                         <label for="name">Insira o seu nome</label>

@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $stmt->execute();
         $count = $stmt->fetchColumn();
         if ($count > 0) {
-            $_SESSION['error'] = "O usuário com email já existe no banco de dados.";
+            $_SESSION['error'] = "Email já existe no banco de dados.";
             header('Location:  ../frontend/pages/signin/new.php');
         }else{
             $encryptPass = password_hash($userArgs['senha'], PASSWORD_BCRYPT);

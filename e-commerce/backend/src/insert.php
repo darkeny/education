@@ -1,6 +1,6 @@
 <?php
 session_start();
-include("../../frontend/pages/signin/index.php");
+include("conexao.php");
 
 $userArgs = filter_input_array(INPUT_POST, FILTER_DEFAULT);
 
@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $count = $stmt->fetchColumn();
         if ($count > 0) {
             $_SESSION['error'] = "Email já existe no banco de dados.";
-            header('Location:  ../frontend/pages/signin/new.php');
+            header('Location:  ../../frontend/pages/signin/new.php');
         }else{
             $encryptPass = password_hash($userArgs['senha'], PASSWORD_BCRYPT);
             // Preparar a declaração SQL para inserir o registro

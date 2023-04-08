@@ -28,7 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     if ($auth) {
         $_SESSION['values'] = $auth;
-        header('Location: ../../frontend/pages/signin/new.php');
+        header('Location: ../../frontend/pages/dashboard/index.php');
     } else {
         $_SESSION['error-first'] = "<div class='text-center alert alert-danger' role='alert'>Usuário ou senha incorreto</div>";
         header('Location: ../../frontend/pages/signin/index.php');

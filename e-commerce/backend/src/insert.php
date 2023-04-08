@@ -1,6 +1,6 @@
 <?php
 session_start();
-include("../../frontend/pages/signin/index.php");
+include("conexao.php");
 
 $userArgs = filter_input_array(INPUT_POST, FILTER_DEFAULT);
 
@@ -14,19 +14,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $stmt->execute();
         $count = $stmt->fetchColumn();
         if ($count > 0) {
-            $_SESSION['error'] = "Email já existe no banco de dados.";
-            header('Location:  ../frontend/pages/signin/new.php');
-        }else{
+            $_SESSION['error'] = "<div class='text-center alert alert-danger' role='alert'>Email já existe no banco de dados.</div>";
+            header('Location:  ../../frontend/pages/signin/new.php');
+        } else {
             $encryptPass = password_hash($userArgs['senha'], PASSWORD_BCRYPT);
             // Preparar a declaração SQL para inserir o registro
             $sql = "INSERT INTO User (nome, email, senha) VALUES (?,?,?)";
             $stmt = $conn->prepare($sql);
-    
+
             // Vincular os parâmetros
             $stmt->bindValue(1, $userArgs['nome']);
             $stmt->bindValue(2, $userArgs['email']);
             $stmt->bindValue(3, $encryptPass);
-    
+
             // Executar a declaração SQL
             try {
                 $stmt->execute();
@@ -39,5 +39,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } catch (PDOException $e) {
         echo "Erro com banco de dados" . $e->getMessage();
     }
-
 }

@@ -83,6 +83,14 @@ input[type="email"],
   object-fit: cover;
 }
 
+li a{
+  font-size: 16px;
+}
+
+size-20{
+  font-size: 50px;
+}
+
 .hidden-border {
   border: none !important;
 }

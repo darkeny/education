@@ -32,10 +32,10 @@ if (!isset($_SESSION['values'])) {
                 <div class="collapse navbar-collapse" id="navbarText">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Início</a>
+                            <a class="nav-link active" aria-current="page" href="../home/index.php">Início</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Painel de Controle</a>
+                            <a class="nav-link" href="../dashboard/index.php">Painel de Controle</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Suporte</a>
@@ -49,7 +49,7 @@ if (!isset($_SESSION['values'])) {
                     </ul>
                     <span class="navbar-text">
                         <a href="index.php">
-                            <div class="btn btn-primary">Sign-in</div>
+                            <img src="../../img/happy-girl.jpg" class="small-logo">
                         </a>
                     </span>
                 </div>

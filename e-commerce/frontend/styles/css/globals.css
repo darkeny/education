@@ -76,6 +76,13 @@ input[type="email"],
   border-radius: 15px !important;
 }
 
+.small-logo {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
 .hidden-border {
   border: none !important;
 }

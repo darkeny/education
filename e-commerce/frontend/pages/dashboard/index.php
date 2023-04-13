@@ -8,7 +8,7 @@ if (!isset($_SESSION['values'])) {
 }
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-pt">
 
 <head>
     <meta charset="UTF-8">
@@ -18,12 +18,11 @@ if (!isset($_SESSION['values'])) {
     <link rel="stylesheet" href="../../styles/css/globals.css">
     <script src="http://localhost/public/js/bootstrap.min.js" async defer></script>
     <script src="../../styles/js/form_validation.js" async defer></script>
-    <!--O async e o defer nao permitem que a pagina seja enviada antes da rendereizacao do script -->
-    <title>Document</title>
+    <title>Painel de Controle</title>
 </head>
 
 <body>
-    
+
 </body>
 
 </html>

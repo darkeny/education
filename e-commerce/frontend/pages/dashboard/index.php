@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION['values'])) {
-    header('Location: ../../frontend/pages/signin/index.php');
+    header('Location: ../signin/index.php');
     exit();
 } else {
     $values = $_SESSION['values'];
@@ -23,13 +23,7 @@ if (!isset($_SESSION['values'])) {
 </head>
 
 <body>
-    <div class="conatiner">
-        <div class="content-center">
-            <h2>
-                <?php echo 'Bem Vindo!' . $values['nome'] . '!' ?>
-            </h2>
-        </div>
-    </div>
+    
 </body>
 
 </html>

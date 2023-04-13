@@ -12,13 +12,39 @@
 </head>
 
 <body>
-    <header class="fixed-top d-flex align-items-center p-2 shadow-sm">
-        <div class="container d-flex align-items-center">
-            <div class="logo me-auto">   
-                <h2><a href="#" class="text-muted">Malanga Store</a></h2>
+<header>
+        <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
+            <div class="container">
+                <a class="navbar-brand" href="#">Malanga Store</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.php">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../dashboard/index.php">Painel de Controle</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Suporte</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sobre nós</a>
+                        </li>
+                    </ul>
+                    <span class="navbar-text">
+                        <a href="../signin/index.php">
+                            <div class="btn btn-primary">Sign-in</div>
+                        </a>
+                    </span>
+                </div>
             </div>
-        </div>
-        
+        </nav>
     </header>
 </body>
 

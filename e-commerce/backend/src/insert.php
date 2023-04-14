@@ -6,6 +6,12 @@ $userArgs = filter_input_array(INPUT_POST, FILTER_DEFAULT);
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
+    if (empty($userArgs['nome']) || empty($userArgs['email']) || empty($userArgs['senha'])) {
+        $_SESSION['error'] = "<div class='text-center alert alert-danger' role='alert'>Por favor, preencha todos os campos.</div>";
+        header('Location:  ../../frontend/pages/signin/new.php');
+        exit;
+    }
+
     $sql = "SELECT COUNT(*) FROM User WHERE email = ?";
     $stmt = $conn->prepare($sql);
     $stmt->bindValue(1, $userArgs['email']);

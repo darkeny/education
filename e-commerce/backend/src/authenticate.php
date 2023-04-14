@@ -2,10 +2,16 @@
 session_start();
 include("conexao.php");
 
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $nome = filter_input(INPUT_POST, 'nome', FILTER_SANITIZE_STRING);
-    $senha = filter_input(INPUT_POST, 'senha', FILTER_SANITIZE_STRING);
+$nome = filter_input(INPUT_POST, 'nome', FILTER_SANITIZE_STRING);
+$senha = filter_input(INPUT_POST, 'senha', FILTER_SANITIZE_STRING);
 
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+
+    if (empty($nome) || empty($senha)) {
+        $_SESSION['error-first'] = "<div class='text-center alert alert-danger' role='alert'>Por favor, preencha todos os campos.</div>";
+        header('Location:  ../../frontend/pages/signin/index.php');
+        exit;
+    }
     function auth($conn, $nome, $senha)
     {
         $sql = "SELECT * FROM User WHERE nome = ?";
@@ -14,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         try {
             $stmt->execute();
             $user = $stmt->fetch(PDO::FETCH_ASSOC);
-            if ($user &&password_verify($senha, $user['senha'])) {
+            if ($user && password_verify($senha, $user['senha'])) {
                 return $user;
             } else {
                 return false;

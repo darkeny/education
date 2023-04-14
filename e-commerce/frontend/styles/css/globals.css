@@ -20,6 +20,12 @@ a {
   border: solid 1px black !important;
 }
 
+.content-div-center{
+  display: flex;
+  height: 100vh; /* Define a altura da div pai */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+}
 .content-center {
   position: absolute;
   top: 50%;
@@ -83,13 +89,11 @@ input[type="email"],
   object-fit: cover;
 }
 
+
 li a{
   font-size: 16px;
 }
 
-size-20{
-  font-size: 50px;
-}
 
 .hidden-border {
   border: none !important;

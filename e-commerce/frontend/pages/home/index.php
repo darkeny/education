@@ -47,8 +47,8 @@
         </nav>
     </header>
 
-    <div class="container mt-5 pt-5">
-        <div class="row">
+    <div class="container">
+        <div class="row content-div-center">
             <div class="col-md-6">
                
             </div>

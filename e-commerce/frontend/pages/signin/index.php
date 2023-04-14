@@ -57,7 +57,7 @@ session_start();
     </header>
     <div class="container">
         <div class="container-login-small content-center w-100 ">
-            <div class="shadow p-5 brd-15">
+            <div class="shadow p-5 brd-15 animate__animated animate__pulse">
                 <h1 class="fw-bold text-center">Sign-in</h1>
                 <?php
                 if (isset($_SESSION['error-first'])) {

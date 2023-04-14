@@ -36,9 +36,6 @@ if (!isset($_SESSION['values'])) {
                 <div class="collapse navbar-collapse" id="navbarText">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../home/index.php">Início</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link" href="../dashboard/index.php">Painel de Controle</a>
                         </li>
                         <li class="nav-item">

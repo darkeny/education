@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="http://localhost/public/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../styles/css/globals.css">
     <script src="http://localhost/public/js/bootstrap.min.js" async defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
     <title>Malanga Store</title>
 </head>
 
@@ -49,7 +51,7 @@
 
     <div class="container">
         <div class="row  content-div-center">
-            <div class="col-md-6">
+            <div class="col-md-6 animate__animated animate__fadeInUp ">
                 <div class="display-4 fw-bold c-info container-login-md">
                     Potencialize seu setup com a Malanga Store
                 </div>
@@ -63,7 +65,7 @@
                 </div>
             </div>
             <div class="col-md-6">
-                <img src="../../img/workspace.svg" class="w-100">
+                <img src="../../img/workspace.svg" class="w-100 animate__animated animate__fadeInRight">
             </div>
         </div>
     </div>

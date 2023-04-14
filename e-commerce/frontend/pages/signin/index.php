@@ -22,7 +22,7 @@ session_start();
     <header>
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
-                <a class="navbar-brand text-muted " href="#">
+                <a class="navbar-brand text-muted " href="../home/index.php">
                     <img src="../../img/logo/logo.png" class="animate__animated animate__pulse" width="130px">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -57,7 +57,7 @@ session_start();
     </header>
     <div class="container">
         <div class="container-login-small content-center w-100 ">
-            <div class="shadow p-5 brd-15">
+            <div class="shadow p-5 brd-15 animate__animated animate__pulse">
                 <h1 class="fw-bold text-center">Sign-in</h1>
                 <?php
                 if (isset($_SESSION['error-first'])) {

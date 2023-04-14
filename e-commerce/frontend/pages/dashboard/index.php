@@ -27,7 +27,7 @@ if (!isset($_SESSION['values'])) {
     <header>
         <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
             <div class="container">
-                <a class="navbar-brand text-muted " href="#">
+                <a class="navbar-brand text-muted " href="../home/index.php">
                     <img src="../../img/logo/logo.png" class="animate__animated animate__pulse" width="130px">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,9 +35,6 @@ if (!isset($_SESSION['values'])) {
                 </button>
                 <div class="collapse navbar-collapse" id="navbarText">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../home/index.php">Início</a>
-                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="../dashboard/index.php">Painel de Controle</a>
                         </li>

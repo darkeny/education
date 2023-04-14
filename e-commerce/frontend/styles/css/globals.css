@@ -2,9 +2,8 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Times New Roman', Times, serif !important;
-  /*font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;*/
+  /* font-family: 'Times New Roman', Times, serif !important; */
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 
 a {
@@ -20,6 +19,12 @@ a {
   border: solid 1px black !important;
 }
 
+.content-div-center{
+  display: flex;
+  height: 100vh; /* Define a altura da div pai */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+}
 .content-center {
   position: absolute;
   top: 50%;
@@ -31,6 +36,10 @@ a {
 
 .container-login {
   max-width: 600px !important;
+}
+
+.container-login-md{
+  max-width: 550px !important;
 }
 
 .container-login-small {
@@ -83,13 +92,11 @@ input[type="email"],
   object-fit: cover;
 }
 
+
 li a{
   font-size: 16px;
 }
 
-size-20{
-  font-size: 50px;
-}
 
 .hidden-border {
   border: none !important;
@@ -124,7 +131,8 @@ size-20{
 }
 
 .c-info {
-  color: #0dcaf0 !important;
+  /* color: #0dcaf0 !important; */
+  color: #0b3c75 !important;
 }
 
 .c-primary {
@@ -148,7 +156,6 @@ size-20{
 
 
 .center-center {
-  flex-direction: column !important;
   align-items: center !important;
   justify-content: center !important;
 }

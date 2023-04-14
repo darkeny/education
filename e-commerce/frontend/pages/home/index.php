@@ -48,15 +48,25 @@
     </header>
 
     <div class="container">
-        <div class="row content-div-center">
+        <div class="row  content-div-center">
             <div class="col-md-6">
-               
+                <div class="display-4 fw-bold c-info container-login-md">
+                    Potencialize seu setup com a Malanga Store
+                </div>
+                <div class="text-muted fs-3 container-login ">
+                    Seu destino para produtos de informática de alta qualidade
+                </div>
+                <div class="mb-5 pb-3">
+                    <a href="../signin/new.php">
+                        <button class=" my-2 mb-5 btn btn-lg btn-primary">Crie uma conta</button>
+                    </a>
+                </div>
             </div>
             <div class="col-md-6">
                 <img src="../../img/workspace.svg" class="w-100">
             </div>
-            </div>
         </div>
+    </div>
     </div>
 </body>
 

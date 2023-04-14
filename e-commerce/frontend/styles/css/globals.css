@@ -2,9 +2,8 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Times New Roman', Times, serif !important;
-  /*font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;*/
+  /* font-family: 'Times New Roman', Times, serif !important; */
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 
 a {
@@ -37,6 +36,10 @@ a {
 
 .container-login {
   max-width: 600px !important;
+}
+
+.container-login-md{
+  max-width: 550px !important;
 }
 
 .container-login-small {
@@ -128,7 +131,8 @@ li a{
 }
 
 .c-info {
-  color: #0dcaf0 !important;
+  /* color: #0dcaf0 !important; */
+  color: #0b3c75 !important;
 }
 
 .c-primary {
@@ -152,7 +156,6 @@ li a{
 
 
 .center-center {
-  flex-direction: column !important;
   align-items: center !important;
   justify-content: center !important;
 }

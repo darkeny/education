@@ -30,16 +30,16 @@
                             <a class="nav-link active" aria-current="page" href="#home">Início</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="#sobre">Sobre nós</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="../dashboard/index.php">Painel de Controle</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Suporte</a>
+                            <a class="nav-link" href="#suporte">Suporte</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Productos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Sobre nós</a>
                         </li>
                     </ul>
                     <span class="navbar-text">
@@ -61,14 +61,33 @@
                     <div class="text-muted fs-3 container-login ">
                         Seu destino para produtos de informática de alta qualidade
                     </div>
-                    <div class="mb-5 pb-3">
-                        <a href="../signin/new.php">
-                            <button class=" my-2 mb-5 btn btn-lg btn-primary">Crie uma conta</button>
-                        </a>
-                    </div>
+
+                    <a href="../signin/new.php">
+                        <button class=" my-2 mb-5 btn btn-lg btn-primary">Crie uma conta</button>
+                    </a>
+
                 </div>
                 <div class="col-md-6">
                     <img src="../../img/workspace.svg" class="w-100 animate__animated animate__fadeInRight">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sobre" class="p-5 bg-primary-md">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 p-3 shadow-sm bg-light brd-15">
+                    <div class="container-login-md">
+                        <img src="../../img/suporte/undraw_software_engineer_re_tnjc.svg" class="w-100">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="container">
+                        <div class="text-center display-6 fw-bold text-white">Saiba mais sobre nós</div>
+                        <div class="fs-5 text-white  mt-3">
+                            Seu destino para produtos de informática de alta qualidade Seu destino para produtos de informática de alta qualidade informática de alta alta 
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

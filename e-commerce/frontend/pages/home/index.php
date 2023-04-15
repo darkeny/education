@@ -75,18 +75,31 @@
     </section>
     <section id="sobre" class="p-5 bg-primary-md">
         <div class="container">
-            <div class="row">
-                <div class="col-sm-6 p-3 shadow-sm bg-light brd-15">
+            <div class="row ">
+                <div class="col-sm-6 p-3 shadow-sm bg-white brd-15">
                     <div class="container-login-md">
                         <img src="../../img/suporte/undraw_software_engineer_re_tnjc.svg" class="w-100">
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="container">
-                        <div class="text-center display-6 fw-bold text-white">Saiba mais sobre nós</div>
-                        <div class="fs-5 text-white  mt-3">
-                            Seu destino para produtos de informática de alta qualidade Seu destino para produtos de informática de alta qualidade informática de alta alta 
+                        <div class="text-center display-6 fw-bold text-white mt-3">Saiba mais sobre nós</div>
+                        <div class="fs-6 text-white text-center mt-3">
+                            Somos um ecommerce de informática com ampla variedade de produtos e preços competitivos. Oferecemos frete grátis e aceitamos devoluções, proporcionando uma experiência de compra fácil e segura. Somos uma excelente opção para compras online de informática, e prestammos servicços de:
                         </div>
+                        <nav>
+                            <ul class="list-unstyled mt-3 ">
+                                <li class="nav-item shadow-sm brd-10 bg-white p-3 ">
+                                    Assistencia Técnica
+                                </li>
+                                <li class=" nav-item my-3 shadow-sm brd-10 bg-white p-3">
+                                    Cloud Computing
+                                </li>
+                                <li class=" nav-item shadow-sm brd-10 bg-white p-3">
+                                    Segurança da Informação
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
             </div>

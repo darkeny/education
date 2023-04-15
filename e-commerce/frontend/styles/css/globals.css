@@ -84,6 +84,13 @@ input[type="email"],
 .brd-15 {
   border-radius: 15px !important;
 }
+.bg-primary-md{
+  background-color:  #0548ad !important;
+}
+
+.bg-primary-small{
+  background-color: #0d6efd !important;
+}
 
 
 .small-logo {

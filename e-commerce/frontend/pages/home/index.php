@@ -73,7 +73,7 @@
             </div>
         </div>
     </section>
-    <section id="sobre" class="p-5 bg-secondary">
+    <section id="sobre" class="p-5 bg-primary-md">
         <div class="container">
             <div class="row">
                 <div class="col-sm-6 p-3 shadow-sm bg-light brd-15">
@@ -84,7 +84,9 @@
                 <div class="col-sm-6">
                     <div class="container">
                         <div class="text-center display-6 fw-bold text-white">Saiba mais sobre nós</div>
-                        
+                        <div class="fs-5 text-white  mt-3">
+                            Seu destino para produtos de informática de alta qualidade Seu destino para produtos de informática de alta qualidade informática de alta alta 
+                        </div>
                     </div>
                 </div>
             </div>

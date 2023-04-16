@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="http://localhost/public/css/bootstrap.min.css">
     <link rel="stylesheet" href="http://localhost/public/css/animate.css/animate.min.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> -->
     <link rel="stylesheet" href="../../styles/css/globals.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> -->
     <script src="http://localhost/public/js/bootstrap.min.js" async defer></script>
 
     <title>Malanga Store</title>
@@ -63,7 +63,7 @@
                     </div>
 
                     <a href="../signin/new.php">
-                        <button class=" my-2 mb-5 btn btn-lg btn-primary">Crie uma conta</button>
+                        <button class=" my-2 mb-5 brd-15 btn btn-lg btn-primary">Crie uma conta</button>
                     </a>
 
                 </div>

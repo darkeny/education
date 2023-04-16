@@ -1,9 +1,12 @@
 html,
 body {
+
+  
   padding: 0;
   margin: 0;
   /* font-family: 'Times New Roman', Times, serif !important; */
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+  
 }
 
 a {
@@ -84,8 +87,11 @@ input[type="email"],
 .brd-15 {
   border-radius: 15px !important;
 }
+
+
+
 .bg-primary-md{
-  background-color:  #0548ad !important;
+  background-color:  #051124 !important;
 }
 
 .bg-primary-small{
@@ -156,6 +162,10 @@ li a{
   color: #198754 !important;
 }
 
+.c-puple {
+  color: #e0a3a3 !important;
+}
+
 
 .text-bold {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -166,4 +176,8 @@ li a{
 .center-center {
   align-items: center !important;
   justify-content: center !important;
+}
+.animated-info {
+  opacity: 0;
+  visibility: hidden;
 }

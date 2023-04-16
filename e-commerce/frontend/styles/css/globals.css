@@ -162,6 +162,10 @@ li a{
   color: #198754 !important;
 }
 
+.c-puple {
+  color: #e0a3a3 !important;
+}
+
 
 .text-bold {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -172,4 +176,8 @@ li a{
 .center-center {
   align-items: center !important;
   justify-content: center !important;
+}
+.animated-info {
+  opacity: 0;
+  visibility: hidden;
 }

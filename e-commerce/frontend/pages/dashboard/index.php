@@ -57,6 +57,26 @@ if (!isset($_SESSION['values'])) {
             </div>
         </nav>
     </header>
+    <section id="dasboard">
+        <div class="container-fluid">
+            <div class="row g-2 m-4">
+                <div class="col-sm-4 shadow-sm p-3 rounded-3">
+                    <div class="row g-2 align-items-center">
+                        <div class="col-8 p-2">
+                            <div class="fs-5 fw-bold">Darken Paulo Machava</div>
+                            <div class="text-muted fs-6">Desenvolvedor & Cyber security</div>
+                        </div>
+                        <div class="col-4 p-2 text-center">
+                            <a href="index.php">
+                                <img src="../../img/logo/perfil.jpg" class="medium-logo">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-8 shadow-sm p-3 rounded-3"></div>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>

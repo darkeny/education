@@ -38,7 +38,7 @@
                             <a class="nav-link" href="../dashboard/index.php">Painel de Controle</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#suporte">Suporte</a>
+                            <a class="nav-link" href="#parceiro">Parceiros</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Productos</a>
@@ -75,12 +75,12 @@
             </div>
         </div>
     </section>
-    <section id="sobre" class="p-5 bg-primary-md bg-gradient ">
+    <section id="sobre" class="p-5 bg-primary-md bg-gradient my-5 ">
         <div class="container">
             <div class="row ">
                 <div class="col-sm-6 p-3 shadow-sm bg-white brd-15">
-                    <div class="container-login-md">
-                        <img src="../../img/suporte/undraw_software_engineer_re_tnjc.svg" class="w-100">
+                    <div class="container-login-md ">
+                        <img src="../../img/suporte/team.svg" class="text-center pt-5 w-100">
                     </div>
                 </div>
                 <div class="col-sm-6">
@@ -91,13 +91,13 @@
                         </div>
                         <nav>
                             <ul class="list-unstyled mt-3 ">
-                                <li class="nav-item shadow-sm brd-10 bg-white p-3 fs-5 ">
+                                <li class="nav-item shadow-sm brd-10 bg-white p-3 fs-6 ">
                                     Assistencia Técnica
                                 </li>
-                                <li class=" nav-item my-3 shadow-sm brd-10 bg-white p-3 fs-5">
+                                <li class=" nav-item my-3 shadow-sm brd-10 bg-white p-3 fs-6">
                                     Cloud Computing
                                 </li>
-                                <li class=" nav-item shadow-sm brd-10 bg-white p-3 fs-5">
+                                <li class=" nav-item shadow-sm brd-10 bg-white p-3 fs-6">
                                     Segurança da Informação
                                 </li>
                             </ul>
@@ -105,6 +105,35 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+    <section id="parceiros">
+        <div class="row mt-5">
+            <div class="col-sm-6 p-5 pt-5 mt-5">
+                <div class="text-center display-6 fw-bold text-dark mt-5">Nossos Parceiros</div>
+                <div class="row text-center shadow-sm m-5 p-3 align-items-center">
+                    <div class="col-4"><img src="../../img/suporte/apple.png" width="65px"></div>
+                    <div class="col-4"><img src="../../img/suporte/cisco.png" width="65px"></div>
+                    <div class="col-4"><img src="../../img/suporte/lg.png" width="65px"></div>
+                </div>
+                <div class="row text-center shadow-sm m-5 my-3 p-3 align-items-center">
+                    <div class="col-4"><img src="../../img/suporte/home-center.png" width="65px"></div>
+                    <div class="col-4"><img src="../../img/suporte/hisense.png" width="95px"></div>
+                    <div class="col-4"><img src="../../img/suporte/minerva.png" width="65px"></div>
+                </div>
+                <div class="row text-center shadow-sm m-5 p-3 align-items-center">
+                    <div class="col-4"><img src="../../img/suporte/dell.png" width="65px"></div>
+                    <div class="col-4"><img src="../../img/suporte/hp.png" width="45px"></div>
+                    <div class="col-4"><img src="../../img/suporte/samsung.png" width="85px"></div>
+                </div>
+            </div>
+            <div class="col-sm-6 pt-5 mt-5">
+                <div class="container-login-md">
+                    <img src="../../img/suporte/partners.svg" class="w-100">
+                </div>
+            </div>
+        </div>
+
         </div>
     </section>
 </body>

@@ -91,13 +91,13 @@
                         </div>
                         <nav>
                             <ul class="list-unstyled mt-3 ">
-                                <li class="nav-item shadow-sm brd-10 bg-white p-3 fs-5 ">
+                                <li class="nav-item shadow-sm brd-10 bg-white p-3 fs-6 ">
                                     Assistencia Técnica
                                 </li>
-                                <li class=" nav-item my-3 shadow-sm brd-10 bg-white p-3 fs-5">
+                                <li class=" nav-item my-3 shadow-sm brd-10 bg-white p-3 fs-6">
                                     Cloud Computing
                                 </li>
-                                <li class=" nav-item shadow-sm brd-10 bg-white p-3 fs-5">
+                                <li class=" nav-item shadow-sm brd-10 bg-white p-3 fs-6">
                                     Segurança da Informação
                                 </li>
                             </ul>

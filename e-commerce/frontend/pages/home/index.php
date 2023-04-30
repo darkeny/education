@@ -107,34 +107,97 @@
             </div>
         </div>
     </section>
-    <section id="parceiros">
+    <section id="parceiros" class="my-5">
         <div class="row mt-5">
             <div class="col-sm-6 p-5 pt-5 mt-5">
                 <div class="text-center display-6 fw-bold text-dark mt-5">Nossos Parceiros</div>
-                <div class="row text-center shadow-sm m-5 p-3 align-items-center">
-                    <div class="col-4"><img src="../../img/suporte/apple.png" width="65px"></div>
-                    <div class="col-4"><img src="../../img/suporte/cisco.png" width="65px"></div>
-                    <div class="col-4"><img src="../../img/suporte/lg.png" width="65px"></div>
+                <div class="row text-center shadow brd-15 m-5 p-3 align-items-center">
+                    <div class="col-4"><img src="../../img/suporte/apple.png" width="45px"></div>
+                    <div class="col-4"><img src="../../img/suporte/cisco.png" width="45px"></div>
+                    <div class="col-4"><img src="../../img/suporte/lg.png" width="45px"></div>
                 </div>
-                <div class="row text-center shadow-sm m-5 my-3 p-3 align-items-center">
-                    <div class="col-4"><img src="../../img/suporte/home-center.png" width="65px"></div>
-                    <div class="col-4"><img src="../../img/suporte/hisense.png" width="95px"></div>
-                    <div class="col-4"><img src="../../img/suporte/minerva.png" width="65px"></div>
+                <div class="row text-center shadow brd-15 m-5 my-3 p-3 align-items-center">
+                    <div class="col-4"><img src="../../img/suporte/home-center.png" width="25px"></div>
+                    <div class="col-4"><img src="../../img/suporte/hisense.png" width="65px"></div>
+                    <div class="col-4"><img src="../../img/suporte/minerva.png" width="45px"></div>
                 </div>
-                <div class="row text-center shadow-sm m-5 p-3 align-items-center">
-                    <div class="col-4"><img src="../../img/suporte/dell.png" width="65px"></div>
-                    <div class="col-4"><img src="../../img/suporte/hp.png" width="45px"></div>
-                    <div class="col-4"><img src="../../img/suporte/samsung.png" width="85px"></div>
+                <div class="row text-center shadow brd-15 m-5 p-3 align-items-center">
+                    <div class="col-4"><img src="../../img/suporte/dell.png" width="45px"></div>
+                    <div class="col-4"><img src="../../img/suporte/hp.png" width="25px"></div>
+                    <div class="col-4"><img src="../../img/suporte/samsung.png" width="45px"></div>
                 </div>
             </div>
-            <div class="col-sm-6 pt-5 mt-5">
-                <div class="container-login-md">
+            <div class="col-sm-6 pt-5 mt-5 text-center">
+                <div class="justify-items-center container-login-md">
                     <img src="../../img/suporte/partners.svg" class="w-100">
                 </div>
             </div>
         </div>
 
         </div>
+    </section>
+    <section id="footer" class="mt-5 pt-5 bg-light">
+
+        <footer id="footer">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row text-muted">
+
+                        <div class="col-lg-3 col-md-6">
+                            <div class="footer-info">
+                                <h3 class="text-dark">Malanga Store</h3>
+                                <p>
+                                    Av.Nelson Mandela <br>
+                                    Zimpeto, Matendene<br><br>
+                                    <strong class="text-dark">Phone:</strong> +258 87 231 4523<br>
+                                    <strong class="text-dark">Email:</strong> info@malanga.com<br>
+                                </p>
+                                <div class="social-links mt-3">
+                                    <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                                    <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                                    <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                                    <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                                    <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-6 footer-links">
+                            <h4 class="text-dark">Utilitarios</h4>
+                            <ul>
+                                <li><a href="#home">Início</a></li>
+                                <li><a href="#parceiros">Parceiros</a></li>
+                                <li><a href="#productos">Productos</a></li>
+                                <li><a href="#sobre">Sobre nós</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 footer-links">
+                            <h4 class="text-dark">Nossos serviços</h4>
+                            <ul>
+                                <li><a href="#">E-commerce</a></li>
+                                <li><a href="#">Cloud Computing</a></li>
+                                <li><a href="#">Assistência tecnica</a></li>
+                                <li><a href="#">Segurança de Informação</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 footer-newsletter">
+                            <h4 class="text-dark">Nossas Novidades</h4>
+                            <p>Subscreva-se com o seu email para ser notificado quando novos productos forem adicionados</p>
+                            <form action="#" method="post">
+                                <div class="d-flex">
+                                    <input type="email" name="email" id="email" class="me-1 form-control hidden-focus">
+                                    <button class="btn btn-primary">Subscrever</button>
+                                </div>
+                            </form>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
     </section>
 </body>
 

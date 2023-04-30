@@ -59,7 +59,7 @@ if (!isset($_SESSION['values'])) {
     </header>
     <section id="dasboard">
         <div class="container-fluid">
-            <div class="row g-2 m-4">
+            <div class="row gx-5 gy-2 justify-content-between m-4">
                 <div class="col-sm-4 shadow-sm p-3 rounded-3">
                     <div class="row g-2 align-items-center">
                         <div class="col-8 p-2">
@@ -73,7 +73,9 @@ if (!isset($_SESSION['values'])) {
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-8 shadow-sm p-3 rounded-3"></div>
+                <div class="col-sm-8 shadow-sm p-3 rounded-3">
+                    
+                </div>
             </div>
         </div>
     </section>

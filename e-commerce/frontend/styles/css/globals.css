@@ -21,6 +21,13 @@ a {
   border: solid 1px black !important;
 }
 
+.text-truncate {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
 .content-div-center {
   display: flex;
   height: 100vh;

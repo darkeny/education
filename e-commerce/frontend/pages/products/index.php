@@ -58,49 +58,110 @@
 			<!-- Card 1 -->
 			<div class="col">
 				<div class="card h-100">
-					<img src="https://via.placeholder.com/300x200.png?text=Produto+1" class="card-img-top" alt="Imagem do Produto 1">
+					<img src="../../img/ecommerce/computer.jpeg" class="card-img-top" alt="Imagem do Produto 1">
 					<div class="card-body">
 						<h5 class="card-title">Produto 1</h5>
 						<p class="card-text text-truncate">Descrição breve do produto 1.</p>
 					</div>
-					<div class="card-footer">
-						<small class="text-muted">$19.99</small>
-						<span class="badge bg-success rounded-pill float-end">Em estoque</span>
+					<div class="card-footer d-flex justify-content-between align-items-center">
+						<small class="text-muted">$39.99</small>
+						<div class="text-end">
+							<span class="badge bg-success rounded-pill ms-3">Em estoque</span>
+							<img width="20px" src="../../img/ecommerce/cart-plus.svg" alt="">
+						</div>
 					</div>
 				</div>
 			</div>
 			<!-- Card 2 -->
 			<div class="col">
 				<div class="card h-100">
-					<img src="https://via.placeholder.com/300x200.png?text=Produto+2" class="card-img-top" alt="Imagem do Produto 2">
+					<img src="../../img/ecommerce/computer.jpeg" class="card-img-top" alt="Imagem do Produto 2">
 					<div class="card-body">
 						<h5 class="card-title">Produto 2</h5>
 						<p class="card-text text-truncate">Descrição breve do produto 2.</p>
 					</div>
-					<div class="card-footer">
-						<small class="text-muted">$29.99</small>
-						<span class="badge bg-danger rounded-pill float-end">Esgotado</span>
+					<div class="card-footer d-flex justify-content-between align-items-center">
+						<small class="text-muted">$39.99</small>
+						<div class="text-end">
+							<span class="badge bg-danger rounded-pill ms-3">Em Esgotado</span>
+							<img width="20px" src="../../img/ecommerce/cart-plus.svg" alt="">
+						</div>
 					</div>
 				</div>
 			</div>
 			<!-- Card 3 -->
 			<div class="col">
 				<div class="card h-100">
-					<img src="https://via.placeholder.com/300x200.png?text=Produto+3" class="card-img-top" alt="Imagem do Produto 3">
+					<img src="../../img/ecommerce/computer.jpeg" class="card-img-top" alt="Imagem do Produto 3">
 					<div class="card-body">
 						<h5 class="card-title">Produto 3</h5>
 						<p class="card-text text-truncate">Descrição breve do produto 3.</p>
 					</div>
-					<div class="card-footer">
+					<div class="card-footer d-flex justify-content-between align-items-center">
 						<small class="text-muted">$39.99</small>
-						<span class="badge bg-success rounded-pill float-end">Em estoque</span>
+						<div class="text-end">
+							<span class="badge bg-danger rounded-pill ms-3">Esgotado</span>
+							<img width="20px" src="../../img/ecommerce/cart-plus.svg" alt="">
+						</div>
 					</div>
+
+				</div>
+			</div>
+			<div class="col">
+				<div class="card h-100">
+					<img src="../../img/ecommerce/computer.jpeg" class="card-img-top" alt="Imagem do Produto 1">
+					<div class="card-body">
+						<h5 class="card-title">Produto 1</h5>
+						<p class="card-text text-truncate">Descrição breve do produto 1.</p>
+					</div>
+					<div class="card-footer d-flex justify-content-between align-items-center">
+						<small class="text-muted">$39.99</small>
+						<div class="text-end">
+							<span class="badge bg-danger rounded-pill ms-3">Esgotado</span>
+							<img width="20px" src="../../img/ecommerce/cart-plus.svg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Card 2 -->
+			<div class="col">
+				<div class="card h-100">
+					<img src="../../img/ecommerce/computer.jpeg" class="card-img-top" alt="Imagem do Produto 2">
+					<div class="card-body">
+						<h5 class="card-title">Produto 2</h5>
+						<p class="card-text text-truncate">Descrição breve do produto 2.</p>
+					</div>
+					<div class="card-footer d-flex justify-content-between align-items-center">
+						<small class="text-muted">$39.99</small>
+						<div class="text-end">
+							<span class="badge bg-success rounded-pill ms-3">Em estoque</span>
+							<img width="20px" src="../../img/ecommerce/cart-plus.svg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Card 3 -->
+			<div class="col">
+				<div class="card h-100">
+					<img src="../../img/ecommerce/computer.jpeg" class="card-img-top" alt="Imagem do Produto 3">
+					<div class="card-body">
+						<h5 class="card-title">Produto 3</h5>
+						<p class="card-text text-truncate">Descrição breve do produto 3.</p>
+					</div>
+					<div class="card-footer d-flex justify-content-between align-items-center">
+						<small class="text-muted">$39.99</small>
+						<div class="text-end">
+							<span class="badge bg-success rounded-pill ms-3">Em estoque</span>
+							<img width="20px" src="../../img/ecommerce/cart-plus.svg" alt="">
+						</div>
+					</div>
+
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<section id="footer" class="fixed-bottom mt-5 pt-5 bg-light">
+	<section id="footer" class="mt-5 pt-5 bg-light">
 
 		<footer id="footer">
 			<div class="footer-top">

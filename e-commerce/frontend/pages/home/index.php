@@ -107,7 +107,7 @@
             </div>
         </div>
     </section>
-    <section id="parceiros" class="my-5">
+    <section id="parceiros" class="container my-5">
         <div class="row mt-5">
             <div class="col-sm-6 p-5 pt-5 mt-5">
                 <div class="text-center display-6 fw-bold text-dark mt-5">Nossos Parceiros</div>

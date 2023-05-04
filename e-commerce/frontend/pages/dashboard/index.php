@@ -42,7 +42,7 @@ if (!isset($_SESSION['values'])) {
                             <a class="nav-link" href="#">Suporte</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Productos</a>
+                            <a class="nav-link" href="../products/index.php">Productos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Sobre nós</a>

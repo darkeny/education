@@ -60,8 +60,9 @@
 				<div class="card h-100">
 					<img src="../../img/ecommerce/computer.jpeg" class="card-img-top" alt="Imagem do Produto 1">
 					<div class="card-body">
-						<h5 class="card-title">Produto 1</h5>
-						<p class="card-text text-truncate">Descrição breve do produto 1.</p>
+						<h5 class="card-title fw-bold">Microsoft Surface Laptop Go</h5>
+						<p class="">
+							Microsoft Surface Laptop Go 10th Gen Intel Core i5-12.4" (31.5 cms) Touchscreen Laptop (8GB/256GB SSD/Windows 10 Home in S Mode/Intel UHD Graphics/Platinum/1.110 kg) - THJ-00023</p>
 					</div>
 					<div class="card-footer d-flex justify-content-between align-items-center">
 						<small class="text-muted">$39.99</small>
@@ -77,7 +78,7 @@
 				<div class="card h-100">
 					<img src="../../img/ecommerce/computer.jpeg" class="card-img-top" alt="Imagem do Produto 2">
 					<div class="card-body">
-						<h5 class="card-title">Produto 2</h5>
+						<h5 class="card-title fw-bold">Produto 2</h5>
 						<p class="card-text text-truncate">Descrição breve do produto 2.</p>
 					</div>
 					<div class="card-footer d-flex justify-content-between align-items-center">
@@ -94,7 +95,7 @@
 				<div class="card h-100">
 					<img src="../../img/ecommerce/computer.jpeg" class="card-img-top" alt="Imagem do Produto 3">
 					<div class="card-body">
-						<h5 class="card-title">Produto 3</h5>
+						<h5 class="card-title fw-bold">Produto 3</h5>
 						<p class="card-text text-truncate">Descrição breve do produto 3.</p>
 					</div>
 					<div class="card-footer d-flex justify-content-between align-items-center">
@@ -111,7 +112,7 @@
 				<div class="card h-100">
 					<img src="../../img/ecommerce/computer.jpeg" class="card-img-top" alt="Imagem do Produto 1">
 					<div class="card-body">
-						<h5 class="card-title">Produto 1</h5>
+						<h5 class="card-title fw-bold">Produto 1</h5>
 						<p class="card-text text-truncate">Descrição breve do produto 1.</p>
 					</div>
 					<div class="card-footer d-flex justify-content-between align-items-center">
@@ -128,7 +129,7 @@
 				<div class="card h-100">
 					<img src="../../img/ecommerce/computer.jpeg" class="card-img-top" alt="Imagem do Produto 2">
 					<div class="card-body">
-						<h5 class="card-title">Produto 2</h5>
+						<h5 class="card-title fw-bold">Produto 2</h5>
 						<p class="card-text text-truncate">Descrição breve do produto 2.</p>
 					</div>
 					<div class="card-footer d-flex justify-content-between align-items-center">
@@ -145,7 +146,7 @@
 				<div class="card h-100">
 					<img src="../../img/ecommerce/computer.jpeg" class="card-img-top" alt="Imagem do Produto 3">
 					<div class="card-body">
-						<h5 class="card-title">Produto 3</h5>
+						<h5 class="card-title fw-bold">Produto 3</h5>
 						<p class="card-text text-truncate">Descrição breve do produto 3.</p>
 					</div>
 					<div class="card-footer d-flex justify-content-between align-items-center">

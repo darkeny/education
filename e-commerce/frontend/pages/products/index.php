@@ -45,6 +45,9 @@
 						</li>
 					</ul>
 					<span class="navbar-text">
+						<a href="#" class="btn btn-white hidden-focus " data-bs-toggle="modal" data-bs-target="#carrinhoModal">
+							<img src="../../img/ecommerce/cart-check.svg" width="35px">
+						</a>
 						<a href="./new.php">
 							<div class="btn btn-primary">Sign-up</div>
 						</a>
@@ -58,7 +61,7 @@
 			<!-- Card 1 -->
 			<div class="col">
 				<div class="card h-100">
-					<img src="../../img/ecommerce/computer.jpeg" class="card-img-top" alt="Imagem do Produto 1">
+					<img src="../../img/ecommerce/pc5.jpg" class="card-img-top" alt="Imagem do Produto 1">
 					<div class="card-body">
 						<h5 class="card-title fw-bold">Microsoft Surface Laptop Go</h5>
 						<p class="">
@@ -76,7 +79,7 @@
 			<!-- Card 2 -->
 			<div class="col">
 				<div class="card h-100">
-					<img src="../../img/ecommerce/computer.jpeg" class="card-img-top" alt="Imagem do Produto 2">
+					<img src="../../img/ecommerce/pc2.jpg" class="card-img-top" alt="Imagem do Produto 2">
 					<div class="card-body">
 						<h5 class="card-title fw-bold">Produto 2</h5>
 						<p class="card-text text-truncate">Descrição breve do produto 2.</p>
@@ -93,7 +96,7 @@
 			<!-- Card 3 -->
 			<div class="col">
 				<div class="card h-100">
-					<img src="../../img/ecommerce/computer.jpeg" class="card-img-top" alt="Imagem do Produto 3">
+					<img src="../../img/ecommerce/pc3.jpg" class="card-img-top" alt="Imagem do Produto 3">
 					<div class="card-body">
 						<h5 class="card-title fw-bold">Produto 3</h5>
 						<p class="card-text text-truncate">Descrição breve do produto 3.</p>
@@ -110,7 +113,7 @@
 			</div>
 			<div class="col">
 				<div class="card h-100">
-					<img src="../../img/ecommerce/computer.jpeg" class="card-img-top" alt="Imagem do Produto 1">
+					<img src="../../img/ecommerce/pc4.jpg" class="card-img-top" alt="Imagem do Produto 1">
 					<div class="card-body">
 						<h5 class="card-title fw-bold">Produto 1</h5>
 						<p class="card-text text-truncate">Descrição breve do produto 1.</p>
@@ -127,7 +130,7 @@
 			<!-- Card 2 -->
 			<div class="col">
 				<div class="card h-100">
-					<img src="../../img/ecommerce/computer.jpeg" class="card-img-top" alt="Imagem do Produto 2">
+					<img src="../../img/ecommerce/pc1.jpg" class="card-img-top" alt="Imagem do Produto 2">
 					<div class="card-body">
 						<h5 class="card-title fw-bold">Produto 2</h5>
 						<p class="card-text text-truncate">Descrição breve do produto 2.</p>
@@ -144,7 +147,7 @@
 			<!-- Card 3 -->
 			<div class="col">
 				<div class="card h-100">
-					<img src="../../img/ecommerce/computer.jpeg" class="card-img-top" alt="Imagem do Produto 3">
+					<img src="../../img/ecommerce/pc6.jpg" class="card-img-top" alt="Imagem do Produto 3">
 					<div class="card-body">
 						<h5 class="card-title fw-bold">Produto 3</h5>
 						<p class="card-text text-truncate">Descrição breve do produto 3.</p>
@@ -161,7 +164,9 @@
 			</div>
 		</div>
 	</section>
-
+	<!-- <section class="py-5 bg-dark">
+        <img src="../../img/animate-svg/animation.svg">
+    </section> -->
 	<section id="footer" class="mt-5 pt-5 bg-light">
 
 		<footer id="footer">
@@ -179,7 +184,7 @@
 									<strong class="text-dark">Email:</strong> info@malanga.com<br>
 								</p>
 								<div class="social-links mt-3">
-									<a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+									<a href="#" class="twitter"><img src="../../img/ecommerce/cart-check.svg" width="25px"></i></a>
 									<a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
 									<a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
 									<a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
@@ -224,6 +229,30 @@
 				</div>
 			</div>
 		</footer>
+	</section>
+	<section id="modal_site">
+		<div class="modal fade" id="carrinhoModal" tabindex="-1" aria-labelledby="carrinhoModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered modal-lg">
+				<div class="modal-content">
+					<div class="modal-header bg-secondary">
+						<h5 class="modal-title text-white fs-3" id="carrinhoModalLabel">Estado do Carrinho</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<!-- Lista de produtos adicionados ao carrinho -->
+						<ul class="list-group">
+							<li class="list-group-item">Produto 1</li>
+							<li class="list-group-item">Produto 2</li>
+							<li class="list-group-item">Produto 3</li>
+						</ul>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Continuar comprando</button>
+						<button type="button" class="btn btn-primary">Finalizar compra</button>
+					</div>
+				</div>
+			</div>
+		</div>
 	</section>
 </body>
 

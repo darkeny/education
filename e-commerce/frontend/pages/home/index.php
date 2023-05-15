@@ -41,7 +41,7 @@
                             <a class="nav-link" href="#parceiro">Parceiros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Productos</a>
+                            <a class="nav-link" href="../products/index.php">Productos</a>
                         </li>
                     </ul>
                     <span class="navbar-text">

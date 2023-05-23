@@ -81,42 +81,42 @@ if (!isset($_SESSION['values'])) {
                     <div class="container d-flex align-items-center justify-content-center">
 
                         <div class="rounded-3 card-body bg-light">
-                            <h5 class="card-title">Vendas <span>| Hoje</span></h5>
+                            <h5 class="card-title c-primary">Vendas <span class="text-muted">| Hoje</span></h5>
 
                             <div class="d-flex align-items-center">
                                 <div class="d-flex align-items-center justify-content-center">
                                     <img src="../../img/ecommerce/cart-check.svg" class="p-3 bg-info rounded-circle">
                                 </div>
                                 <div class="ps-3">
-                                    <h6>145</h6>
+                                    <h6 class="c-primary fs-5">145</h6>
                                     <span class="text-success small pt-1 fw-bold">12%</span> <span class="text-muted small pt-2 ps-1">increase</span>
 
                                 </div>
                             </div>
                         </div>
                         <div class="rounded-3 card-body bg-light">
-                            <h5 class="card-title">Stoke <span>| Mensal</span></h5>
+                            <h5 class="card-title c-primary">Stoke <span class="text-muted">| Mensal</span></h5>
 
                             <div class="d-flex align-items-center">
                                 <div class="d-flex align-items-center justify-content-center">
                                     <img src="../../img/ecommerce/basket2.svg" class="p-3 bg-primary rounded-circle">
                                 </div>
                                 <div class="ps-3">
-                                    <h6>2679</h6>
+                                    <h6 class="c-primary fs-5">2679</h6>
                                     <span class="text-success small pt-1 fw-bold">15%</span> <span class="text-muted small pt-2 ps-1">increase</span>
 
                                 </div>
                             </div>
                         </div>
                         <div class="rounded-3 card-body bg-light">
-                            <h5 class="card-title">Funcionarios <span>| Este Ano</span></h5>
+                            <h5 class="card-title c-primary">Funcionarios <span class="text-muted">| Este Ano</span></h5>
 
                             <div class="d-flex align-items-center">
                                 <div class="d-flex align-items-center justify-content-center">
                                     <img src="../../img/ecommerce/people.svg" class="p-3 bg-warning rounded-circle">
                                 </div>
                                 <div class="ps-3">
-                                    <h6>98</h6>
+                                    <h6 class="c-primary fs-5">98</h6>
                                     <span class="text-danger small pt-1 fw-bold">9%</span> <span class="text-muted small pt-2 ps-1">decrese</span>
 
                                 </div>

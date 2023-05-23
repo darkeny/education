@@ -63,8 +63,8 @@ if (!isset($_SESSION['values'])) {
     </header>
     <section id="dasboard">
         <div class="container-fluid">
-            <div class="row gx-5 gy-2 justify-content-between m-4 my-4">
-                <div class="col-sm-4 shadow-sm p-3 rounded-3">
+            <div class="row gx-5 gy-2 justify-content-between align-items-center m-4 my-4">
+                <div class="col-sm-4 shadow-sm py-4 mt-4 rounded-3">
                     <div class="row g-2 align-items-center">
                         <div class="col-8 p-2">
                             <div class="fs-5 fw-bold"><?php echo $values['nome']; ?></div>
@@ -78,12 +78,49 @@ if (!isset($_SESSION['values'])) {
                     </div>
                 </div>
                 <div class="col-sm-8 shadow-sm p-3 rounded-3">
-                    <div class="container">
-                        <div class="d-flex justify-content-between container">
-                            <div class="large-logo bg-secondary"></div>
-                            <div class="large-logo bg-secondary"></div>
-                            <div class="large-logo bg-secondary"></div>
-                            <div class="large-logo bg-secondary"></div>
+                    <div class="container d-flex align-items-center justify-content-center">
+
+                        <div class="rounded-3 card-body bg-light">
+                            <h5 class="card-title">Vendas <span>| Hoje</span></h5>
+
+                            <div class="d-flex align-items-center">
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <img src="../../img/ecommerce/cart-check.svg" class="p-3 bg-info rounded-circle">
+                                </div>
+                                <div class="ps-3">
+                                    <h6>145</h6>
+                                    <span class="text-success small pt-1 fw-bold">12%</span> <span class="text-muted small pt-2 ps-1">increase</span>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rounded-3 card-body bg-light">
+                            <h5 class="card-title">Stoke <span>| Mensal</span></h5>
+
+                            <div class="d-flex align-items-center">
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <img src="../../img/ecommerce/basket2.svg" class="p-3 bg-primary rounded-circle">
+                                </div>
+                                <div class="ps-3">
+                                    <h6>2679</h6>
+                                    <span class="text-success small pt-1 fw-bold">15%</span> <span class="text-muted small pt-2 ps-1">increase</span>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rounded-3 card-body bg-light">
+                            <h5 class="card-title">Funcionarios <span>| Este Ano</span></h5>
+
+                            <div class="d-flex align-items-center">
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <img src="../../img/ecommerce/people.svg" class="p-3 bg-warning rounded-circle">
+                                </div>
+                                <div class="ps-3">
+                                    <h6>98</h6>
+                                    <span class="text-danger small pt-1 fw-bold">9%</span> <span class="text-muted small pt-2 ps-1">decrese</span>
+
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

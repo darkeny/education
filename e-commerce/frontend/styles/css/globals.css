@@ -123,6 +123,13 @@ input[type="email"],
   object-fit: cover;
 }
 
+.large-logo {
+  width: 85px;
+  height: 85px;
+  border-radius: 35%;
+  object-fit: cover;
+}
+
 
 li a {
   font-size: 16px;
@@ -179,7 +186,7 @@ li a {
   color: #198754 !important;
 }
 
-.c-puple {
+.c-secondary {
   color: #e0a3a3 !important;
 }
 

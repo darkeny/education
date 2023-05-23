@@ -38,7 +38,7 @@
                             <a class="nav-link" href="../dashboard/index.php">Painel de Controle</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#parceiro">Parceiros</a>
+                            <a class="nav-link" href="#parceiros">Parceiros</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="../products/index.php">Productos</a>
@@ -149,7 +149,7 @@
                                 <p>
                                     Av.Nelson Mandela <br>
                                     Zimpeto, Matendene<br><br>
-                                    <strong class="text-dark">Phone:</strong> +258 87 231 4523<br>
+                                    <strong class="text-dark">Phone:</strong> +258 87 861 0417<br>
                                     <strong class="text-dark">Email:</strong> info@malanga.com<br>
                                 </p>
                                 <div class="social-links mt-3">
@@ -167,7 +167,7 @@
                             <ul>
                                 <li><a href="#home">Início</a></li>
                                 <li><a href="#parceiros">Parceiros</a></li>
-                                <li><a href="#productos">Productos</a></li>
+                                <li><a href="../products/index.php">Productos</a></li>
                                 <li><a href="#sobre">Sobre nós</a></li>
                             </ul>
                         </div>

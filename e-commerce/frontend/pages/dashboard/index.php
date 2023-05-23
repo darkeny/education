@@ -46,9 +46,16 @@ if (!isset($_SESSION['values'])) {
                         </li>
                     </ul>
                     <span class="navbar-text">
-                        <a href="index.php">
-                            <img src="../../img/logo/perfil.jpg" class="small-logo">
-                        </a>
+
+                        <div class="dropdown">
+                            <div class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="../../img/logo/perfil.jpg" class="small-logo">
+                            </div>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../../backend/src/logout.php">Terminar Sessão</a></li>
+                            </ul>
+                        </div>
+
                     </span>
                 </div>
             </div>

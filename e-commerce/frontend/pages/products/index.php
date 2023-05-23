@@ -35,13 +35,10 @@
 							<a class="nav-link" href="../dashboard/index.php">Painel de Controle</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Suporte</a>
+							<a class="nav-link" href="../products/index.php">Productos</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Productos</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Sobre nós</a>
+							<a class="nav-link" href="../home/#sobre">Sobre nós</a>
 						</li>
 					</ul>
 					<span class="navbar-text">

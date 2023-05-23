@@ -245,7 +245,7 @@
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Continuar comprando</button>
-						<button type="button" class="btn btn-primary">Finalizar compra</button>
+						<button type="button" class="btn btn-primary" data-bs-dismiss="modal">Finalizar compra</button>
 					</div>
 				</div>
 			</div>

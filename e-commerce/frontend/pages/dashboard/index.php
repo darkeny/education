@@ -63,8 +63,8 @@ if (!isset($_SESSION['values'])) {
                 <div class="col-sm-4 shadow-sm p-3 rounded-3">
                     <div class="row g-2 align-items-center">
                         <div class="col-8 p-2">
-                            <div class="fs-5 fw-bold">Darken Paulo Machava</div>
-                            <div class="text-muted fs-6">Desenvolvedor & Cyber security</div>
+                            <div class="fs-5 fw-bold"><?php echo $values['nome']; ?></div>
+                            <div class="text-muted fs-6">Gestor de vendas</div>
                         </div>
                         <div class="col-4 p-2 text-center">
                             <a href="index.php">
@@ -74,7 +74,14 @@ if (!isset($_SESSION['values'])) {
                     </div>
                 </div>
                 <div class="col-sm-8 shadow-sm p-3 rounded-3">
-
+                    <div class="container">
+                        <div class="d-flex justify-content-between container">
+                            <div class="large-logo bg-secondary"></div>
+                            <div class="large-logo bg-secondary"></div>
+                            <div class="large-logo bg-secondary"></div>
+                            <div class="large-logo bg-secondary"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

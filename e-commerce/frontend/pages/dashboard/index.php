@@ -1,11 +1,58 @@
 <?php
 session_start();
+
+
+
+include("../../../backend/src/conexao.php");
 if (!isset($_SESSION['values'])) {
     header('Location: ../signin/index.php');
     exit();
 } else {
     $values = $_SESSION['values'];
+    $usersArgs = $_SESSION['users'];
+    
 }
+
+
+
+//Pegar todos funcionarios
+$sql = "SELECT * FROM User";
+$stmt = $conn->prepare($sql);
+
+try {
+    $stmt->execute();
+    $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
+} catch (PDOException $e) {
+    echo "Erro com banco de dados: " . $e->getMessage();
+}
+
+
+
+
+//Pegar o numero dos funcionarios
+$sql = "SELECT COUNT(*) FROM User";
+$stmt = $conn->prepare($sql);
+
+try {
+    $stmt->execute();
+    $count = $stmt->fetchColumn();
+} catch (PDOException $e) {
+    echo "Erro com banco de dados: " . $e->getMessage();
+}
+
+
+
+
+
+$id = $_GET['id'];
+$sql = "SELECT * FROM User WHERE id = :id";
+$stmt = $conn->prepare($sql);
+$stmt->bindParam(':id', $id);
+$stmt->execute();
+
+$user_data = $stmt->fetch(PDO::FETCH_ASSOC);
+
+
 ?>
 <!DOCTYPE html>
 <html lang="pt-pt">
@@ -68,7 +115,7 @@ if (!isset($_SESSION['values'])) {
                     <div class="row g-2 align-items-center">
                         <div class="col-8 p-2">
                             <div class="fs-5 fw-bold"><?php echo $values['nome']; ?></div>
-                            <div class="text-muted fs-6">Gestor de vendas</div>
+                            <div class="text-muted fs-6"><?php echo $user_data['nome']; ?>Gestor de vendas</div>
                         </div>
                         <div class="col-4 p-2 text-center">
                             <a href="index.php">
@@ -116,7 +163,7 @@ if (!isset($_SESSION['values'])) {
                                     <img src="../../img/ecommerce/people.svg" class="p-3 bg-warning rounded-circle">
                                 </div>
                                 <div class="ps-3">
-                                    <h6 class="c-primary fs-5">98</h6>
+                                    <h6 class="c-primary fs-5"> <?php echo $count; ?> </h6>
                                     <span class="text-danger small pt-1 fw-bold">9%</span> <span class="text-muted small pt-2 ps-1">decrese</span>
 
                                 </div>
@@ -127,7 +174,128 @@ if (!isset($_SESSION['values'])) {
             </div>
         </div>
     </section>
+    <section>
+        <div class="container-fluid my-2">
+            <h3 class="c-primary">Gestão dos funcionarios</h3>
+            <table class="table table-striped">
+                <thead class="bg-secondary">
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Nome</th>
+                        <th scope="col">Senha</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Ações</th> <!-- Coluna adicionada para os botões de ação -->
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php
+                    if (!empty($users)) {
+                        foreach ($users as $user) {
+                            echo "<tr>";
+                            echo "<td>" . $user['id'] . "</td>";
+                            echo "<td>" . $user['nome'] . "</td>";
+                            echo "<td>" . $user['senha'] . "</td>";
+                            echo "<td>" . $user['email'] . "</td>";
+                            echo '<td>
+                                <a data-bs-toggle="modal" data-bs-target="#updateEmployer"><button class="btn btn-primary btn-sm">Editar</button></a>
+                                <a href="../../../backend/src/delete.php?id=' . $user['id'] . '"><button class="btn btn-danger btn-sm">Excluir</button></a>
+                              </td>';
+                            echo "</tr>";
+                        }
+                    } else {
+                        echo "<tr><td colspan='5'>Nenhum usuário encontrado.</td></tr>";
+                    }
+                    ?>
+                </tbody>
+            </table>
+            <div class="text-center">
+                <a data-bs-toggle="modal" data-bs-target="#addEmployer"><button class="btn btn-primary px-5">Adicionar</button></a>
+            </div>
+        </div>
+    </section>
 
+
+    <section id="modal_create">
+        <div class="modal fade" id="addEmployer" tabindex="-1" aria-labelledby="addEmployerLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered container-login-small modal-lg">
+                <div class="modal-content  animate__animated animate__pulse brd-15">
+                    <div class="modal-body">
+
+                        <h1 class="fw-bold text-center py-3">Sign-up</h1>
+
+                        <?php
+                        if (isset($_SESSION['error'])) {
+                            echo $_SESSION['error'];
+
+                            unset($_SESSION['error']);
+                        }
+                        ?>
+
+                        <form action="../../../backend/src/insert.php" method="post" class="needs-validation" novalidate>
+                            <div class="form-floating">
+                                <input type="text" id="name" name="nome" class="form-control hidden-focus" required placeholder="Insira seu nome">
+                                <label for="name">Insira o seu nome</label>
+                            </div>
+                            <div class="form-floating my-2">
+                                <input type="email" id="email" name="email" class="form-control hidden-focus" required placeholder="Insira seu email">
+                                <label for="name">Insira o seu email</label>
+                            </div>
+                            <div class="form-floating">
+                                <input type="password" id="password" name="senha" class="form-control hidden-focus" required placeholder="Insira seu nome">
+                                <label for="name">Insira a sua senha</label>
+                            </div>
+                            <div class="m-3  text-center">
+                                <button type="submit" id="submitButton" class="btn btn-sm btn-primary">Submeter</button>
+                            </div>
+                        </form>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="modal_update">
+        <div class="modal fade" id="updateEmployer" tabindex="-1" aria-labelledby="updateEmployerLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered container-login-small modal-lg">
+                <div class="modal-content  animate__animated animate__pulse brd-15">
+                    <div class="modal-body">
+
+                        <h3 class=" text-center py-3">Editar Funcionario</h3>
+
+                        <?php
+                        if (isset($_SESSION['error'])) {
+                            echo $_SESSION['error'];
+
+                            unset($_SESSION['error']);
+                        }
+                        ?>
+
+                        <form action="../../../backend/src/update.php" method="post" class="needs-validation" novalidate>
+                            <div class="form-floating">
+                            <input type="text" id="nome" name="nome" class="form-control hidden-focus" required placeholder="Insira seu nome">
+                                <label for="name">Insira o seu nome</label>
+                            </div>
+                            <div class="form-floating my-2">
+                                <input type="email" id="email" name="email" class="form-control hidden-focus" required placeholder="Insira seu email">
+                                <label for="name">Insira o seu email</label>
+                            </div>
+                            <div class="form-floating">
+                                <input type="password" id="password" name="senha" class="form-control hidden-focus" required placeholder="Insira seu nome">
+                                <label for="name">Insira a sua senha</label>
+                            </div>
+                            <div class="m-3  text-center">
+                                <button type="submit" id="submitButton" class="btn btn-sm btn-primary">Submeter edição</button>
+                            </div>
+                        </form>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>

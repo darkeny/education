@@ -40,19 +40,6 @@ try {
     echo "Erro com banco de dados: " . $e->getMessage();
 }
 
-
-
-
-
-$id = $_GET['id'];
-$sql = "SELECT * FROM User WHERE id = :id";
-$stmt = $conn->prepare($sql);
-$stmt->bindParam(':id', $id);
-$stmt->execute();
-
-$user_data = $stmt->fetch(PDO::FETCH_ASSOC);
-
-
 ?>
 <!DOCTYPE html>
 <html lang="pt-pt">

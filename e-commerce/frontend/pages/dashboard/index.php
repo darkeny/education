@@ -1,17 +1,14 @@
 <?php
 session_start();
-
-
-
 include("../../../backend/src/conexao.php");
+
+
 if (!isset($_SESSION['values'])) {
     header('Location: ../signin/index.php');
     exit();
 } else {
     $values = $_SESSION['values'];
-    
 }
-
 
 
 //Pegar todos funcionarios
@@ -101,7 +98,7 @@ try {
                     <div class="row g-2 align-items-center">
                         <div class="col-8 p-2">
                             <div class="fs-5 fw-bold"><?php echo $values['nome']; ?></div>
-                            <div class="text-muted fs-6">Gestor de vendas</div>
+                            <div class="text-muted fs-6"><?php echo $userArgs['nome']; ?>Gestor de vendas</div>
                         </div>
                         <div class="col-4 p-2 text-center">
                             <a href="index.php">
@@ -183,7 +180,7 @@ try {
                             echo "<td>" . $user['senha'] . "</td>";
                             echo "<td>" . $user['email'] . "</td>";
                             echo '<td>
-                                <a data-bs-toggle="modal" data-bs-target="#updateEmployer"><button class="btn btn-primary btn-sm">Editar</button></a>
+                                <a href="../signin/newUser.php?id=' . $user['id'] . '" class="btn btn-primary btn-sm">Editar</a>
                                 <a href="../../../backend/src/delete.php?id=' . $user['id'] . '"><button class="btn btn-danger btn-sm">Excluir</button></a>
                               </td>';
                             echo "</tr>";
@@ -260,7 +257,7 @@ try {
 
                         <form action="../../../backend/src/update.php" method="post" class="needs-validation" novalidate>
                             <div class="form-floating">
-                            <input type="text" id="nome" name="nome" class="form-control hidden-focus" required placeholder="Insira seu nome">
+                                <input type="text" id="nome" name="nome" class="form-control hidden-focus" required placeholder="Insira seu nome">
                                 <label for="name">Insira o seu nome</label>
                             </div>
                             <div class="form-floating my-2">

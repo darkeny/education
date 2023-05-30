@@ -98,7 +98,7 @@ try {
                     <div class="row g-2 align-items-center">
                         <div class="col-8 p-2">
                             <div class="fs-5 fw-bold"><?php echo $values['nome']; ?></div>
-                            <div class="text-muted fs-6"><?php echo $userArgs['nome']; ?>Gestor de vendas</div>
+                            <div class="text-muted fs-6">Gestor de vendas</div>
                         </div>
                         <div class="col-4 p-2 text-center">
                             <a href="index.php">
